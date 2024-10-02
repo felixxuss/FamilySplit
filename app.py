@@ -13,9 +13,9 @@ if not st.session_state.get("group"):
     st.session_state["group"] = Group()
 
     # add some participants for testing
-    st.session_state.group.add_participant("Müller", 6)
-    st.session_state.group.add_participant("Kremser", 3)
-    st.session_state.group.add_participant("Raue", 4)
+    # st.session_state.group.add_participant("Müller", 6)
+    # st.session_state.group.add_participant("Kremser", 3)
+    # st.session_state.group.add_participant("Raue", 4)
 
 if page == "Teilnehmer":
     teilnehmer.app()
