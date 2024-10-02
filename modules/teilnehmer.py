@@ -41,7 +41,7 @@ def app():
                 for expense in expenses:
                     if expense.payed_by == name or name in expense.other_shares:
                         st.toast(
-                            f"{name} kann nicht gelöscht werden, da eine Anteil an einer Ausgabe existiert."
+                            f"{name} kann nicht gelöscht werden, da ein Anteil an einer Ausgabe existiert."
                         )
                         can_delete = False
                         break
