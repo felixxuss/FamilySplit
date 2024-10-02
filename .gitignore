@@ -1,0 +1,6 @@
+*.ipynb
+# ignore pycache folder
+__pycache__/
+*env/
+
+.env
