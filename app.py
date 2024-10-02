@@ -20,6 +20,14 @@ if not st.session_state.get("group"):
 if page == "Teilnehmer":
     teilnehmer.app()
 elif page == "Ausgaben":
-    ausgaben.app()
+    if not st.session_state.group.has_participants:
+        st.toast("Bitte füge zuerst Teilnehmer hinzu.")
+        teilnehmer.app()
+    else:
+        ausgaben.app()
 elif page == "Zusammenfassung":
-    zusammenfassung.app()
+    if not st.session_state.group.has_participants:
+        st.toast("Bitte füge zuerst Teilnehmer hinzu.")
+        teilnehmer.app()
+    else:
+        zusammenfassung.app()
